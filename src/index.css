@@ -1,0 +1,128 @@
+* {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding-block: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main-card {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 270px;
+  padding: 30px;
+  /* border: 1px solid black; */
+  box-shadow: 8px 10px 10px 5px rgba(150, 150, 150, 0.8);
+  border-radius: 10px;
+}
+
+.location-names {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-days {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.forecast-days p {
+  box-sizing: border-box;
+  width: 100px;
+  display: grid;
+  place-content: center;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 6px 15px 2px rgba(150, 150, 150, 0.8);
+  transition: 0.2s ease;
+}
+
+.forecast-days p:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.ketmon {
+  background: #ffe8e8;
+  border: 3px solid rgb(147, 185, 255);
+}
+
+.hourlyForecast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hourlyCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  height: 130px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.textt {
+  text-align: center;
+}
+
+.hourlyCard:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+  border: 3px solid rgb(147, 185, 255);
+
+  background: #fffefe;
+}
+
+.form-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-input input{
+  width: 300px;
+  height: 40px;
+  padding-inline: 7px;
+  outline-color: rgb(59, 137, 255);
+  border-radius: 10px;
+}
+
+.form-input button{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #f0e3e3;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-input button:hover{
+   border: 3px solid rgb(147, 185, 255);
+   color: black;
+   background: transparent;
+}
